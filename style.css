@@ -1,0 +1,237 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: black;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 740px) {
+  nav {
+    position: relative;
+  }
+
+  .hamburger, .close {
+    display: block;
+    font-size: 24px;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: -100vh;
+  }
+
+  .main-nav.open-nav {
+    top: 0;
+    left: 0;
+    padding: 2% 10%;
+    background-color: purple;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+  }
+
+  .main-nav a {
+    color: red;
+  }
+
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  height: 100px;
+  z-index: 1;
+  width: 100%;
+}
+
+nav ul {
+  font-family: 'Amatic SC', cursive;
+  font-size: 48px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.hamburger, .close {
+  display: none;
+}
+
+
+
+.vancouverwater {
+  width: 100%;
+}
+
+.bike1 {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 250px;
+  height: auto;
+  margin: 0px -150px 0px 0px;
+}
+
+.pineapple {
+  width: 250px;
+  height: auto;
+}
+
+.bike {
+  width: 250px;
+  height: auto;
+  margin: 0px 0px 0px -150px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-family: 'Amatic SC', cursive;
+  font-size: 110px;
+  margin: 0 auto;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.positioning {
+  font-size: 40px;
+  text-align: center;
+  margin: 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: grey;
+}
+
+a:active {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.header {
+  margin: 10px 80px 10px 80px;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 35px;
+  margin: 10px 100px;
+  text-align: center;
+}
+
+.food {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fooditem {
+  padding: 0px;
+  height: 180px;
+  justify-content: space-around;
+}
+
+#about {
+  margin: 10px 100px;
+}
+
+.row {
+  width: 100%;
+  padding: 0px 40px;
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  clear: both;
+}
+
+.row:not(:first-child)
+
+
+.column-50 img {
+  float: left;
+  width: 40%;
+}
+
+.column-50 a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 68px;
+  /*margin: 100px;*/
+}
+
+
+
+.contact {
+  width: 100%;
+  background: black;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.flex-outer {
+  padding: 15px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.flex-outer li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li label + * {
+  flex: 1 0 220px;
+  padding: 15px;
+}
+
+.flex-outer li label {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
